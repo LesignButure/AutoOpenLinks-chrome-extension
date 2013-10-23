@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+
+  "name": "AutoOpenLinks",
+  "description": "Auto Open Multi Links",
+  "version": "1.0",
+
+  //"background": { "scripts": ["background.js"] },
+  //"web_accessible_resources": ["test.js"],//inject into page, and as a part of page
+  "permissions": ["tabs", "clipboardRead"],
+  //"permissions": ["tabs","http://news.baidu.com/*", "clipboardWrite"],
+  //"page_action": {
+          //"default_icon": {
+               //"19": "cnblogs_19.png",
+               //"38": "cnblogs_38.png"
+          //},
+          //"default_title": "cnblogs.com article information"
+   //},
+    "browser_action": {
+    	"default_icon": "Taehee.png", // optional 
+    	"default_title": "Auto Open Multi Links", // optional; shown in tooltip 
+    	"default_popup": "popup.html"        // optional 
+     }
+
+    
+    
+   //"content_scripts": [
+    //{
+      //"matches": ["http://10.225.72.11:15871/cgi-bin/*"],
+      //"matches": ["http://news.baidu.com/*"],
+      //"css": ["mystyles.css"],
+      //"js": ["jquery-1.9.1.min.js", "autoclick.js"]
+      //"run_at": "document_end"
+    //}
+  //]
+}
